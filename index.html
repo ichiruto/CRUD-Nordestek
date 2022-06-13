@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Resgistro de cadastro de clientes</h1>
+    </header>
+    <main>
+        <button id="register-client">Cadastrar</button>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Senha</th>
+                    <th>Operação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Roger</td>
+                    <td>Roger@gmail.com</td>
+                    <td id="password">**********</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shinmas</td>
+                    <td>Shinmas@gmail.com</td>
+                    <td id="password">**********</td>                       
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BigG</td>
+                    <td>BigG@gmail.com</td>
+                    <td id="password">**********</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nullinho</td>
+                    <td>Nullinho@gmail.com</td>
+                    <td id="password">**********</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr> -->
+            </tbody>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Novo Cliente</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form id="register" class="modal-form">
+                        <input type="text" id="name" data-index="new" class="modal-field" placeholder="Nome do Cliente" required>
+                        <input type="email" id="email-client" class="modal-field" placeholder="e-mail do Cliente" required>
+                        <input type="password" id="password-client" class="modal-field" placeholder="*********" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <button id="save" class="button-save">Salvar</button>
+                        <button class="button-cancel">Cancelar</button>
+                    </footer>
+            </div>        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
