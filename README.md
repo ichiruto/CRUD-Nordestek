@@ -1,2 +1,2 @@
 # CRUD-Nordestek
- Projeto seletivo indicado pela Nordestek,nele realize uma criação do CRUD para mostrar tabelamento de dados de clientes
+ Projeto seletivo indicado pela Nordestek,nele realizo uma criação do CRUD para mostrar tabelamento de dados de clientes
